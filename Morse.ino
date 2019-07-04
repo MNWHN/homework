@@ -66,6 +66,10 @@ void loop() {
        
         case '\0':morse.w_space();morse.w_space();break;
         
+        case '\r':morse.w_space();morse.w_space();break;
+
+        default:break;
+        
     }
     }
     incomingByte="";
