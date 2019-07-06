@@ -17,7 +17,7 @@ void loop()
    if(i==4) i=0;
    while(Serial.available() > 0) {
         
-    incoming=Serial.read()-'0';		
+    incoming=Serial.read()-48;		
     
      if(i==0){
        digitalWrite(9,LOW);
