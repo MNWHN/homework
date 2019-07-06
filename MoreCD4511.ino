@@ -20,33 +20,21 @@ void loop()
     incoming=Serial.read()-'0';		
     
      if(i==0){
-       digitalWrite(6,HIGH);
-       digitalWrite(7,HIGH);
-       digitalWrite(8,HIGH);
        digitalWrite(9,LOW);
        light(incoming);
        digitalWrite(9,HIGH);
      }
     if(i==1){
-       digitalWrite(6,HIGH);
-       digitalWrite(7,HIGH);
-       digitalWrite(9,HIGH);
        digitalWrite(8,LOW);
        light(incoming);
        digitalWrite(8,HIGH);
      }
      if(i==2){
-       digitalWrite(6,HIGH);
-       digitalWrite(9,HIGH);
-       digitalWrite(8,HIGH);
        digitalWrite(7,LOW);
        light(incoming);
        digitalWrite(7,HIGH);
      }
      if(i==3){
-       digitalWrite(7,HIGH);
-       digitalWrite(8,HIGH);
-       digitalWrite(9,HIGH);
        digitalWrite(6,LOW);
        light(incoming);
        digitalWrite(6,HIGH);
